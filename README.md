@@ -1,4 +1,4 @@
-![github pages](https://github.com/ukitomato/portfolio/workflows/github%20pages/badge.svg)
+[![Build Status](https://travis-ci.com/ukitomato/portfolio.svg?branch=master)](https://travis-ci.com/ukitomato/portfolio)![github pages](https://github.com/ukitomato/portfolio/workflows/github%20pages/badge.svg)
 
 # Portfolio
 This is my portfolio developed by React.
