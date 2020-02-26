@@ -8,4 +8,7 @@ deploy:
   provider: firebase
   skip_cleanup: true
   token:
-    secure: $FIREBASE_TOKEN
+    secure: "$FIREBASE_TOKEN"
+notifications:
+  slack:
+    secure: kSFDYtD+vhkhobO1xb0mGI0y2AuZtdsmBTe+NMzBk7QiQRtKhhv0HGz3RH4UrgfiWZ3ZDW4gme+gJg9EU2fobu/wcOzFLA4SrM1M2xcpzmjbNXdgv5wru0ff/DAJXHnEj6B7PRNz4ukGV3M4vWvOW45/F1R7uGjMEFu4MXOiwtRAlVaFjgJCM12nb2c5O0lzTlccKftC8SzxFGInrz7FRWF7gmdXfTTYc4ApkwvMPKIPU3COMXv3Mg463uUIyNBsHJ3eeriFJp0j6ZURLSzKuK5i/Kx/E/z5tMzbtc4n1X7tUlsz8K+wlY7DxKzZSW1jg70fjW+rQ7PStqC3Bohta9V6+lXyF+qtgwdbz+MEq5ZsCOu+q01Se6uM/l6ixBHxiBACmcv5nsHL8WOOqiyKjju52ypwxfQC7qOPaSgVlRilgFb7wU5eGic407VnmRWgrpTxWehy2qCchCE5bO+SWm5YYi/TxZbzEtjD7o547dlszGwsc80IlGyxW1wD36tuJ70FsLVZbUiiYqLcR/iAK2W3eTN1K1IwjcYvskvWdYlqJB/AT3ywpJ3PiJ1FKYT0tDGoD+Xztw/P/WFlSRLd5xQgcWbcig23qC+TgA4KjMTzpVM8BU41O9U+GxQDpAGLueKL38qQOl+BVS6lULGO4x4+zdAbboqCAg2beuR/YSo=
