@@ -1,7 +1,11 @@
 language: node_js
 node_js:
-- '12'
+  - '12'
+script:
+  - npm install
+  - npm run build
 deploy:
   provider: firebase
+  skip_cleanup: true
   token:
-    secure: PjBskOQ1JtPeC3LHQ8usZTLKuojWruzG8oKtMh6VqKo6Fegh7I+uyT/KnR4cTNm2v+q7F3rGt5prIm8syZg1oJsFK9tXy3qSczWh0Rq1SS6sdVh1UwzJpL+CNVn/LTgGiRmUfMVcHnVApKzmQuOxQfrPcC0x2WAGFQ9MnmpCXnF52w+Gp8/MJOfbSyirvfAIRcGPiJfkJ8CIOooGx9LpRXTVy1G1vkXtG8YDmFTUX9VvoWiS+oBlUWiiNfo4t+jx4riyoXAb9yRCP74guQGr600FfXuf5tliTvFN7wSfEuHn3w4pekx/VPedNAEprmjBD7SsFDil5LExjK8nNB1T0nYNF/NJM4TJ0NzC1edCwdvBS6ugJELkgL6s5KDa3CepmVn9+FHdKavY1+aa4bD9MUt3TkVRlJnvughRKkW3H/MHcUk3EiFY/09+TODCvV9o4Pvu4OokcUDnIwNXZLxVVqBqJudgGP20mxuoV7URdJbuBgmqo8O+sG187hyDlYXwvk/KFp8yfPQyIJ24rX26KTOdBDGxJcRror43iQ9KXQTKM6tIu+WCrpXqRgQfGcGogPAFcpZVH6+aWcO2SjqcU7hoOosHM1MJbmxQFhpbbDxyTjV6dnil81WhONGLnZ+rXoSFg4SWsF5cQG5XLZRP1ZZ/2dsd9ej/3RDUGQNBQuk=
+    secure: $FIREBASE_TOKEN
