@@ -11,7 +11,14 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
+  deploy:
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "b0:a5:e1:b0:dd:09:20:4b:34:25:13:90:f6:95:9c:2a"
+      - run: ssh web-admin@ukitomato.codes -p 49568 cd /var/www/portfolio && git pull
 workflows:
     build-and-test:
       jobs:
         - build-and-test
+        - deploy
