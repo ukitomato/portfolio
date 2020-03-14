@@ -1,7 +1,11 @@
 ![github pages](https://github.com/ukitomato/portfolio/workflows/github%20pages/badge.svg)
 [![Build Status](https://travis-ci.com/ukitomato/portfolio.svg?branch=master)](https://travis-ci.com/ukitomato/portfolio)
 [![CircleCI](https://circleci.com/gh/ukitomato/portfolio.svg?style=shield)](https://circleci.com/gh/ukitomato/portfolio)
+
 [![codecov](https://codecov.io/gh/ukitomato/portfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/ukitomato/portfolio)
+[![BCH compliance](https://bettercodehub.com/edge/badge/ukitomato/portfolio?branch=master)](https://bettercodehub.com/)
+[![CodeScene Code Health](https://codescene.io/projects/7414/status-badges/code-health)](https://codescene.io/projects/7414)
+[![CodeScene System Mastery](https://codescene.io/projects/7414/status-badges/system-mastery)](https://codescene.io/projects/7414)
 # Portfolio
 This is my portfolio developed by React.
 I'm testing various tools and services.
@@ -18,7 +22,7 @@ I'm testing various tools and services.
 - CI/CD:
     - [Github Actions](https://github.co.jp/features/actions) → (Testing) → (Building) → (Deploying) → Github Pages
     - [Travis CI](https://travis-ci.com) → (Testing) → (Building) → (Deploying) → Firebase Hosting
-    - [Circle CI](https://circleci.com) → (Testing) → (Updating) → My Home Server
+    - [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying) → My Home Server
 
 ## Tools
 - Editor: WebStorm
