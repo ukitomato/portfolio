@@ -28,7 +28,7 @@ workflows:
       - build-and-test:
           filters:
             branches:
-              only: master
+              ignore: gh-pages
       - deploy:
           requires:
             - build-and-test
