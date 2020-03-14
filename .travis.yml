@@ -10,7 +10,7 @@ deploy:
   provider: firebase
   skip_cleanup: true
   token:
-    secure: $FIREBASE_TOKEN
+    secure: JpEyM+TCXZIsT8QhLeuN3L8AzZJ0LH7Fa9+D/JjaejBFS4lHLDkohzWdyag+YEjPviogaGM8dvs4yjC9quA5YXRuIXUFVbzsNoCkVtq2/NEofxF+GQQu7Ktlx/el1S1B3jjtT7EPJbfQnZcjmdS3LiNHYilT5A+SPEh2N+JCRpBdi8ZExibkur8Fvywr/2hq27UxBpGBPyKWvWltkThgVd9K3PgF89MFlSjgwV3zm0+zC4OtWaRGyIHfYALe3j42zK2kF71etPP1FkK8c4hFsookev2CvDkBN7knzRiWpktfVqo6FMWv/Gjqso8A6nUWo0fmDd6cyB5XNrw9uhc7i4PkrfmlRNOFL4Us35pjvJZbYL8AGPyNjEmyqIcynWy+FAN/KNe+ni1bqGg6pz3PtPFNHIo1GzfCMk0F5MdJikFlhCYJx6ICZY3C/fDaz6vBr2W1Q6fyjZjvbtCn/PZO2/mL1eLYfCK23bIABs8lLoLAMqg1+kUoFhimfkF/LEoc2xeYouonFxJzy9ArxmcNAGp9Vi88k/5GIe8EyUVUy8KhFOoqSm0wi6ugLENj614ZyUPP53iB3mAeLTF4SLfCNT0fmUMWZOV+DCk0pOBzaZl5L6zPuiPichueCLPHaVYZS/iGrtTggGxOkpGW78Z72YiIKCp2yafUbKENLJHPZ5M=
   on:
     branch: master
 notifications:
