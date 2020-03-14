@@ -1,6 +1,7 @@
 ![github pages](https://github.com/ukitomato/portfolio/workflows/github%20pages/badge.svg)
 [![Build Status](https://travis-ci.com/ukitomato/portfolio.svg?branch=master)](https://travis-ci.com/ukitomato/portfolio)
 [![CircleCI](https://circleci.com/gh/ukitomato/portfolio.svg?style=shield)](https://circleci.com/gh/ukitomato/portfolio)
+[![codecov](https://codecov.io/gh/ukitomato/portfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/ukitomato/portfolio)
 # Portfolio
 This is my portfolio developed by React.
 I'm testing various tools and services.
