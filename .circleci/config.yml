@@ -24,7 +24,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "b0:a5:e1:b0:dd:09:20:4b:34:25:13:90:f6:95:9c:2a"
-      - run: cd build && ssh -p 49568 web-admin@ukitomato.codes 'cd /var/www/portfolio && rm -rf * && exit' && scp -P 49568 * web-admin@ukitomato.codes:/var/www/portfolio'
+      - run: cd build && ssh -p 49568 web-admin@ukitomato.codes 'cd /var/www/portfolio && rm -rf * && exit' && scp -P 49568 * web-admin@ukitomato.codes:/var/www/portfolio
 
 workflows:
   build-and-test-and-deploy:
