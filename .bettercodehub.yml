@@ -3,8 +3,8 @@ languages:
   - name: typescript
     production:
       exclude:
-        - /src/__test__/.*\.{js,jsx,ts,tsx}
+        - /src/__test__/.*\.tsx
         - /src/serviceWorkwer.ts
     test:
       include:
-        - /src/__test__/.*\.{js,jsx,ts,tsx}
+        - /src/__test__/.*\.tsx
