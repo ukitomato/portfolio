@@ -23,13 +23,16 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    
+
     - name: install
       run: npm install --save-dev
 
+    - name: test
+        - run: npm test
+
     - name: build
       run: npm run build
-      
+
     - name: install SSH client
       uses: webfactory/ssh-agent@v0.2.0
       with:
