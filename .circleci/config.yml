@@ -13,8 +13,8 @@ jobs:
             - run: npm test
             - run: npm run build
   deploy:
-    machine:
-      image: node/default
+    executor:
+      name: node/default
     steps:
       - checkout
       - node/with-cache:
