@@ -4,7 +4,8 @@ languages:
     production:
       exclude:
         - /src/__test__/.*\.tsx
-        - /src/serviceWorkwer.ts
+        - /src/serviceWorker.ts
+        - /src/setupTests.ts
     test:
       include:
         - /src/__test__/.*\.tsx
