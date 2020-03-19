@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Navbar} from "react-bootstrap";
-import {animateScroll as scroll, Link} from "react-scroll";
+import {Link} from "react-scroll";
 import logo from '../logo.svg';
 import NavItem from "./header/NavItem";
 
 class Header extends Component {
-    scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+    // scrollToTop = () => {
+    //     scroll.scrollToTop();
+    // };
 
     render(): React.ReactElement {
         return (
