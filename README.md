@@ -24,7 +24,7 @@ This is my portfolio developed by React. I'm testing various tools and services.
   - [Github Pages](https://pages.github.com):
     https://gh.ukitomato.codes/portfolio
   - [Firebase Hosting](https://firebase.google.com/docs/hosting):
-    https://portfolio-ukitomato.firebaseapp.com
+    https://fb.ukitomato.codes
   - [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org) at
     My Home Server: https://ukitomato.codes
 
