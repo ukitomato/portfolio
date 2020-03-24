@@ -1,15 +1,14 @@
 import React from 'react';
-import {shallow} from "enzyme";
-import NavItem from "../../../components/header/NavItem";
-
+import { shallow } from 'enzyme';
+import NavItem from '../../../components/header/NavItem';
 
 it('should render without crashing', () => {
-    shallow(<NavItem name={'Test'}/>);
+    shallow(<NavItem name={'Test'} />);
 });
 
 test("should render props's value", () => {
-    const navItem = shallow(<NavItem name={'React'}/>);
+    const navItem = shallow(<NavItem name={'React'} />);
     expect(navItem.childAt(0).html()).toContain('<a>React</a>');
-    navItem.setProps({name: 'World'});
+    navItem.setProps({ name: 'World' });
     expect(navItem.childAt(0).html()).toContain('<a>World</a>');
 });

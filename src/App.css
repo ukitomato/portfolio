@@ -41,12 +41,14 @@
     }
 }
 
-
+.navbar-brand {
+    cursor: pointer;
+}
 .nav-item {
     color: white;
     display: block;
-    padding: .5rem 1rem;
-
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .nav-item > .active {

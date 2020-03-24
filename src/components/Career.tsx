@@ -1,21 +1,18 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../App.css';
-import {Button, Container} from "react-bootstrap";
-
+import { Button, Container } from 'react-bootstrap';
 
 function Career() {
     return (
         <Container fluid id="career" className="page">
-
-            <img src={logo} className="App-logo" alt="logo"/>
-            <p>
-                Career
-            </p>
-            <a className="App-link"
-               href="https://reactjs.org"
-               target="_blank"
-               rel="noopener noreferrer"
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>Career</p>
+            <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 Learn React
             </a>

@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import {Navbar} from "react-bootstrap";
-import {Link} from "react-scroll";
+import React, { Component } from 'react';
+import { Navbar } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import logo from '../logo.svg';
-import NavItem from "./header/NavItem";
+import NavItem from './header/NavItem';
 
 class Header extends Component {
     // scrollToTop = () => {
@@ -11,7 +11,7 @@ class Header extends Component {
 
     render(): React.ReactElement {
         return (
-            <Navbar bg="dark" variant="dark" fixed={"top"}>
+            <Navbar bg="dark" variant="dark" fixed={'top'}>
                 <Navbar.Brand>
                     <img
                         alt=""
@@ -32,16 +32,14 @@ class Header extends Component {
                         UKITOMATO
                     </Link>
                 </Navbar.Brand>
-                <NavItem name={'home'}/>
-                <NavItem name={'about'}/>
-                <NavItem name={'skill'}/>
-                <NavItem name={'career'}/>
-                <NavItem name={'contact'}/>
+                <NavItem name={'home'} />
+                <NavItem name={'about'} />
+                <NavItem name={'skill'} />
+                <NavItem name={'career'} />
+                <NavItem name={'contact'} />
             </Navbar>
         );
-
     }
 }
-
 
 export default Header;

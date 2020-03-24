@@ -1,21 +1,21 @@
 import React from 'react';
 import App from '../App';
-import {shallow} from "enzyme";
-import Home from "../components/Home";
-import About from "../components/About";
-import Skill from "../components/Skill";
-import Career from "../components/Career";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import { shallow } from 'enzyme';
+import Home from '../components/Home';
+import About from '../components/About';
+import Skill from '../components/Skill';
+import Career from '../components/Career';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 it('should render without crashing', () => {
-    shallow(<App/>);
+    shallow(<App />);
 });
 
 test('should exist child components', () => {
     // == 準備 ==
     /** Appコンポーネントをshallowレンダリング */
-    const wrapper = shallow(<App/>);
+    const wrapper = shallow(<App />);
 
     expect(wrapper.find(Header).length).toBe(1);
     expect(wrapper.find(Home).length).toBe(1);

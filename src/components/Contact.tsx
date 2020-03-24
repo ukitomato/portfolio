@@ -1,19 +1,17 @@
 import React from 'react';
-import {Button, Container} from "react-bootstrap";
-import logo from "../logo.svg";
-
+import { Button, Container } from 'react-bootstrap';
+import logo from '../logo.svg';
 
 function Contact() {
     return (
         <Container fluid id="contact" className="page">
-            <img src={logo} className="App-logo" alt="logo"/>
-            <p>
-                Contact
-            </p>
-            <a className="App-link"
-               href="https://reactjs.org"
-               target="_blank"
-               rel="noopener noreferrer"
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>Contact</p>
+            <a
+                className="App-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 Learn React
             </a>
