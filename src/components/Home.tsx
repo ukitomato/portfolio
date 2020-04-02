@@ -1,27 +1,41 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React, { ReactElement } from 'react';
 import '../App.css';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
-function Home() {
+function Home(): ReactElement {
     return (
-        <Container fluid id="home" className="page">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                CI/CD [CircleCI, TravisCI, Github Actions], Jest, CODECOV
-                enabled.
-            </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Learn React
-            </a>
-            <Button variant="primary" className="mr-1">
-                Primary
-            </Button>
+        <Container fluid={true} id="home" className="home page">
+            <Row>
+                <Col>
+                    <h1>
+                        Hello! I'm{' '}
+                        <span className={'highlight'}>Yuki Yamato</span>.
+                    </h1>
+                    <div>
+                        I'm a full-stack web/mobile/IoT/interface developer.
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Button
+                    href={'/'}
+                    variant="outline-info"
+                    size={'lg'}
+                    className={'mt-5'}
+                >
+                    <Link
+                        activeClass="active"
+                        to={'about'}
+                        spy={true}
+                        smooth={true}
+                        offset={-56}
+                        duration={500}
+                    >
+                        About Me
+                    </Link>
+                </Button>
+            </Row>
         </Container>
     );
 }

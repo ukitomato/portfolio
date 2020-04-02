@@ -10,7 +10,7 @@ const NavItem = (props: { name: string }) => {
                 to={props.name}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-56}
                 duration={500}
             >
                 {props.name.charAt(0).toUpperCase() + props.name.slice(1)}

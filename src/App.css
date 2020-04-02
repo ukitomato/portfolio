@@ -17,8 +17,21 @@
     background-color: #282c34;
 }
 
+.footer > small > a {
+    color: #61dafb;
+}
+
 .page {
-    background-color: #282c34;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+.home{
+    background-color: #024D5F;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -44,6 +57,7 @@
 .navbar-brand {
     cursor: pointer;
 }
+
 .nav-item {
     color: white;
     display: block;
@@ -54,4 +68,22 @@
 .nav-item > .active {
     /*border-bottom: 2px solid #fff;*/
     color: #53d2fa;
+}
+
+.indicator-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 30px;
+}
+
+.active > hr {
+    width: 50px;
+}
+
+.home {
+    font-family: "Macho", serif;
+}
+
+.highlight{
+    color: #FA15D4;
 }
