@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Container, Navbar, Row } from 'react-bootstrap';
-import { Link } from 'react-scroll';
-import logo from '../logo.svg';
-import NavItem from './header/NavItem';
 import Line from './header/Line';
 
 class Indicator extends Component {

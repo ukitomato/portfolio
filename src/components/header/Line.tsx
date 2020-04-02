@@ -11,6 +11,7 @@ const ColoredLine = (props: { color: string }) => (
         }}
     />
 );
+
 const Line = (props: { name: string }) => {
     return (
         <Nav.Item className={'indicator-item'}>

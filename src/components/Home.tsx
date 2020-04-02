@@ -9,11 +9,11 @@ function Home(): ReactElement {
             <Row>
                 <Col>
                     <h1>
-                        Hello! I'm{' '}
+                        Hello! I&apos;m{' '}
                         <span className={'highlight'}>Yuki Yamato</span>.
                     </h1>
                     <div>
-                        I'm a full-stack web/mobile/IoT/interface developer.
+                        I&apos;m a full-stack web/mobile/IoT/interface developer.
                     </div>
                 </Col>
             </Row>
