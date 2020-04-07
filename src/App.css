@@ -22,6 +22,7 @@
 }
 
 .page {
+    background-color: #282c34;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -30,7 +31,7 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     font-family: montserrat, sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
 }
 
@@ -48,6 +49,13 @@
     justify-content: center;
 }
 
+.section-heading {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+
 .home::before {
     content: '';
     background-color: rgba(0, 0, 0, 0.5);
@@ -60,6 +68,16 @@
 
 p.home-page {
     font-size: 100px;
+}
+
+
+p.description {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+p.about-page {
+    font-size: 25px;
 }
 
 strong.home-page {
@@ -103,6 +121,12 @@ strong.home-page {
     border-radius: 5px;
     height: 5px;
     width: 30px;
+}
+
+.section-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 100px;
 }
 
 .active > hr {

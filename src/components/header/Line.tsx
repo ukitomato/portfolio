@@ -1,16 +1,7 @@
-import React from 'react';
+import React, { ReactHTMLElement } from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-
-const ColoredLine = (props: { color: string }) => (
-    <hr
-        className={'indicator-line'}
-        style={{
-            color: props.color,
-            backgroundColor: props.color,
-        }}
-    />
-);
+import ColoredLine from '../ColoredLine';
 
 const Line = (props: { name: string }) => {
     return (
@@ -23,7 +14,7 @@ const Line = (props: { name: string }) => {
                 offset={-70}
                 duration={500}
             >
-                <ColoredLine color={'white'} />
+                <ColoredLine color={'white'} className={'indicator-line'} />
             </Link>
         </Nav.Item>
     );
