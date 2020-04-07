@@ -22,6 +22,7 @@
 }
 
 .page {
+    background-color: #282c34;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -29,16 +30,62 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    font-family: montserrat, sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
-.home{
-    background-color: #024D5F;
+
+.home {
+    background-image: url("imgs/person_landscape.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
     min-height: 100vh;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.home::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+p.home-page {
+    font-size: 100px;
+}
+
+
+p.description {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+p.about-page {
+    font-size: 25px;
+}
+
+strong.home-page {
+    font-weight: 700;
+}
+
+.btn {
+    z-index: 1;
 }
 
 .App-link {
@@ -76,14 +123,17 @@
     width: 30px;
 }
 
+.section-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 100px;
+}
+
 .active > hr {
     width: 50px;
 }
 
-.home {
-    font-family: "Macho", serif;
-}
 
-.highlight{
+.highlight {
     color: #FA15D4;
 }
