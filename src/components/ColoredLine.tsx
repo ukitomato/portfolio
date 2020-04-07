@@ -1,6 +1,4 @@
-import React, { ReactHTMLElement } from 'react';
-import { Nav } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import React from 'react';
 
 const ColoredLine = (props: { color: string; className: string }) => (
     <hr

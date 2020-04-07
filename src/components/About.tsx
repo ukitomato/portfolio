@@ -1,7 +1,7 @@
 import React from 'react';
 import person from '../imgs/person.gif';
 import '../App.css';
-import { Button, Col, Container, Row, Image } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import ColoredLine from './ColoredLine';
 

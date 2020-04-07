@@ -1,4 +1,4 @@
-import React, { ReactHTMLElement } from 'react';
+import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import ColoredLine from '../ColoredLine';
