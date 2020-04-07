@@ -22,8 +22,9 @@
 }
 
 .page {
+    padding: 50px;
     background-color: #282c34;
-    min-height: 100vh;
+    min-height: 50vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,15 @@
     font-family: montserrat, sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+
+.skill {
+    min-height: 50vh;
+}
+
+.skill-progress {
+    font-size: 20px;
+
 }
 
 .home {
@@ -50,9 +60,10 @@
 }
 
 .section-heading {
+    margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
-    z-index: 10;
+
 }
 
 
@@ -129,6 +140,11 @@ strong.home-page {
     width: 100px;
 }
 
+hr.section-line {
+    text-align: left;
+    margin-left: 0;
+}
+
 .active > hr {
     width: 50px;
 }
@@ -136,4 +152,25 @@ strong.home-page {
 
 .highlight {
     color: #FA15D4;
+}
+
+.progress {
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 60vw;
+}
+.card-header:hover {
+    background-color: #181c24;
+}
+
+.skill-progress-bar > .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #61dafb;
+    transition: width .6s ease;
 }
