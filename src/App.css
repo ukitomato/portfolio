@@ -42,6 +42,7 @@
 
 .skill-progress {
     font-size: 20px;
+
 }
 
 .home {
@@ -158,9 +159,18 @@ hr.section-line {
     margin-bottom: 30px;
     width: 60vw;
 }
+.card-header:hover {
+    background-color: #181c24;
+}
 
-.progress-bar {
-    background-color: purple;
-    color: white;
-
+.skill-progress-bar > .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #61dafb;
+    transition: width .6s ease;
 }
