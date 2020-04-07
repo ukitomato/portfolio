@@ -17,8 +17,11 @@
     background-color: #282c34;
 }
 
+.footer > small > a {
+    color: #61dafb;
+}
+
 .page {
-    background-color: #282c34;
     min-height: 100vh;
     color: white;
     display: flex;
@@ -26,6 +29,45 @@
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.home {
+    background-image: url("imgs/person_landscape.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+p.home-page {
+    font-size: 100px;
+}
+
+strong.home-page {
+    font-weight: 700;
+}
+
+.btn {
+    z-index: 1;
 }
 
 .App-link {
@@ -44,6 +86,7 @@
 .navbar-brand {
     cursor: pointer;
 }
+
 .nav-item {
     color: white;
     display: block;
@@ -54,4 +97,19 @@
 .nav-item > .active {
     /*border-bottom: 2px solid #fff;*/
     color: #53d2fa;
+}
+
+.indicator-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 30px;
+}
+
+.active > hr {
+    width: 50px;
+}
+
+
+.highlight {
+    color: #FA15D4;
 }

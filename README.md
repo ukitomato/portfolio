@@ -15,28 +15,28 @@ This is my portfolio developed by React. I'm testing various tools and services.
 
 ## Architecture
 
-- Language:
-  - [React](https://reactjs.org)
-  - [NodeJS](https://nodejs.org): v12.x
-  - [TypeScript](https://www.typescriptlang.org)
-- Hosting:
+-   Language:
+    -   [React](https://reactjs.org)
+    -   [NodeJS](https://nodejs.org): v12.x
+    -   [TypeScript](https://www.typescriptlang.org)
+-   Hosting:
 
-  - [Github Pages](https://pages.github.com):
-    https://gh.ukitomato.codes/portfolio
-  - [Firebase Hosting](https://firebase.google.com/docs/hosting):
-    https://fb.ukitomato.codes
-  - [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org) at
-    My Home Server: https://ukitomato.codes
+    -   [Github Pages](https://pages.github.com):
+        https://gh.ukitomato.codes/portfolio
+    -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
+        https://fb.ukitomato.codes
+    -   [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
+        at My Home Server: https://ukitomato.codes
 
-- CI/CD:
-  - [Github Actions](https://github.co.jp/features/actions) → (Testing) →
-    (Building) → (Deploying) → Github Pages
-  - [Travis CI](https://travis-ci.com) → (Testing) → (Building) → (Deploying) →
-    Firebase Hosting
-  - [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying) →
-    My Home Server
+-   CI/CD:
+    -   [Github Actions](https://github.co.jp/features/actions) → (Testing) →
+        (Building) → (Deploying) → Github Pages
+    -   [Travis CI](https://travis-ci.com) → (Testing) → (Building) →
+        (Deploying) → Firebase Hosting
+    -   [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
+        → My Home Server
 
 ## Tools
 
-- Editor: WebStorm
-- Design: Adobe XD
+-   Editor: WebStorm
+-   Design: Adobe XD
