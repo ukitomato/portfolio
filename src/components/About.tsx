@@ -10,11 +10,7 @@ function About() {
         <Container fluid id="about" className="about page">
             <Row className="justify-content-md-center align-items-center">
                 <Col xs={6} md={5} lg={4}>
-                    <img
-                        src={person}
-                        alt="Image placeholder"
-                        className="img-fluid"
-                    />
+                    <img src={person} alt="placeholder" className="img-fluid" />
                 </Col>
                 <Col xs={6} md={5} lg={4}>
                     <Col className="section-heading">
