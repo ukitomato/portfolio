@@ -8,22 +8,18 @@ function Home(): ReactElement {
         <Container fluid={true} id="home" className="home page">
             <Row>
                 <Col>
-                    <h1>
-                        Hello! I&apos;m{' '}
-                        <span className={'highlight'}>Yuki Yamato</span>.
-                    </h1>
+                    <p className={'home-page'}>
+                        Howdy, I&apos;m{' '}
+                        <strong className={'home-page'}>Yuki Yamato</strong>
+                    </p>
                     <div>
-                        I&apos;m a full-stack web/mobile/IoT/interface developer.
+                        I&apos;m a full-stack web/mobile/IoT/interface
+                        developer.
                     </div>
                 </Col>
             </Row>
             <Row>
-                <Button
-                    href={'/'}
-                    variant="outline-info"
-                    size={'lg'}
-                    className={'mt-5'}
-                >
+                <Button variant="info" size={'lg'} className={'mt-5'}>
                     <Link
                         activeClass="active"
                         to={'about'}
