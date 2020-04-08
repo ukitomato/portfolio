@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import logo from '../logo.svg';
 import ColoredLine from './ColoredLine';
 
-function Contact() {
+function Contact(): ReactElement {
     return (
         <Container fluid id="contact" className="page">
             <Row className="justify-content-center">
@@ -26,7 +25,7 @@ function Contact() {
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
+                        We&apos;ll never share your email with anyone else.
                     </Form.Text>
                 </Form.Group>
 
