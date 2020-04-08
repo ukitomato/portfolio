@@ -1,4 +1,4 @@
-import React, { ReactElement} from 'react';
+import React, { ReactElement } from 'react';
 import '../App.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import gatech from '../imgs/GAtechnologies.gif';
