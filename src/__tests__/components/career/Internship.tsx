@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import gluegent from '../../../imgs/gluegent.gif';
+import gluegent from '../../../imgs/Gluegent.gif';
 import Internship from '../../../components/career/Internship';
 
 it('should render without crashing', () => {
