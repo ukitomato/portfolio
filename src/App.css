@@ -161,6 +161,14 @@ hr.career-section-line {
     margin-left: 0;
 }
 
+hr.contact-section-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 190px;
+    text-align: center;
+    margin-left: 0;
+}
+
 .active > hr {
     width: 50px;
 }
