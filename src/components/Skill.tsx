@@ -40,7 +40,7 @@ function Skill(): ReactElement {
                             className={'section-line'}
                         />
                     </Col>
-                    <Col xs={6} md={6} lg={7} className={'skill-progress'}>
+                    <Col xs={6} md={6} lg={6} className={'skill-progress'}>
                         <Accordion.Toggle as={Card.Header} eventKey="1">
                             <Row>
                                 <h5>Java</h5>

@@ -8,7 +8,7 @@ it('should render without crashing', () => {
 
 test("should render props's value", () => {
     const navItem = shallow(<NavItem name={'React'} />);
-    expect(navItem.childAt(0).html()).toContain('<a>React</a>');
+    expect(navItem.childAt(0).html()).toContain('<a>REACT</a>');
     navItem.setProps({ name: 'World' });
-    expect(navItem.childAt(0).html()).toContain('<a>World</a>');
+    expect(navItem.childAt(0).html()).toContain('<a>WORLD</a>');
 });
