@@ -36,6 +36,14 @@
     font-style: normal;
 }
 
+/*.card{*/
+/*    background-color: #282c34;*/
+/*}*/
+/*.card-body {*/
+/*    background-color: #282c34;*/
+/*    border-radius: 5px;*/
+/*}*/
+
 .skill {
     min-height: 50vh;
 }
@@ -145,6 +153,14 @@ hr.section-line {
     margin-left: 0;
 }
 
+hr.career-section-line {
+    border-radius: 5px;
+    height: 5px;
+    width: 170px;
+    text-align: center;
+    margin-left: 0;
+}
+
 .active > hr {
     width: 50px;
 }
@@ -159,10 +175,24 @@ hr.section-line {
     margin-bottom: 30px;
     width: 60vw;
 }
-.card-header:hover {
+.skill-progress > .card-header:hover {
     background-color: #181c24;
 }
 
+.i-description{
+    font-size: 20px;
+    font-weight: 300;
+}
+.career > .card{
+    width: 70vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.site-list{
+    font-size: 20px;
+    text-align: left;
+}
 .skill-progress-bar > .progress-bar {
     display: flex;
     flex-direction: column;
