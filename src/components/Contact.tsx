@@ -21,41 +21,40 @@ function Contact(): ReactElement {
                 className={'pageclip-form'}
                 method={'post'}
             >
-                <Form.Group controlId="formBasicEmail">
+                <Form.Group controlId="formName">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                        type="input"
+                        placeholder="Enter your name"
+                        name={'name'}
+                    />
+                </Form.Group>
+
+                <Form.Group controlId="formEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control
+                        type="email"
+                        placeholder="Enter email"
+                        name={'email'}
+                    />
                     <Form.Text className="text-muted">
                         We&apos;ll never share your email with anyone else.
                     </Form.Text>
                 </Form.Group>
 
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                <Form.Group controlId="formContent">
+                    <Form.Label>Content</Form.Label>
+                    <Form.Control as="textarea" rows="3" name={'freespace'} />
                 </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+
                 <Button
-                    variant="primary"
+                    variant="light"
                     type="submit"
                     className="pageclip-form__submit"
                 >
                     Submit
                 </Button>
             </Form>
-            <form
-                action="https://send.pageclip.co/8QGBlPOoermKOh5p4RMD0StWFp7Evysh"
-                className="pageclip-form"
-                method="post"
-            >
-                <input type="text" name="name" value="Roscoe Jones" />
-                <input type="email" name="email" value="roscoe@example.com" />
-
-                <button type="submit" className="pageclip-form__submit">
-                    <span>Send</span>
-                </button>
-            </form>
         </Container>
     );
 }
