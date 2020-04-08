@@ -13,7 +13,7 @@ const NavItem = (props: { name: string }) => {
                 offset={-56}
                 duration={500}
             >
-                {props.name.charAt(0).toUpperCase() + props.name.slice(1)}
+                {props.name.toUpperCase()}
             </Link>
         </Nav.Item>
     );
