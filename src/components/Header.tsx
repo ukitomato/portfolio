@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import logo from '../imgs/diagrams.png';
+import logo from '../logo.svg';
 import NavItem from './header/NavItem';
 
 class Header extends Component {
