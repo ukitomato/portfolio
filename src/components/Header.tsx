@@ -36,6 +36,7 @@ class Header extends Component {
                 <NavItem name={'about'} />
                 <NavItem name={'skill'} />
                 <NavItem name={'career'} />
+                <NavItem name={'research'} />
                 <NavItem name={'contact'} />
             </Navbar>
         );
