@@ -13,6 +13,7 @@ it('should render without crashing', () => {
             url={'Test'}
             description={'Test'}
             img={gluegent}
-            publish={'Test'}/>
+            publish={'Test'}
+        />
     );
 });

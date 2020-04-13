@@ -29,9 +29,7 @@ const Research = (props: {
                                 </li>
                                 <li className="site-check">
                                     Term:{' '}
-                                    <span className="date">
-                                        {props.term}
-                                    </span>
+                                    <span className="date">{props.term}</span>
                                 </li>
                                 <li className="site-check">
                                     Topic: {props.topic}
@@ -46,14 +44,13 @@ const Research = (props: {
                     </Col>
                     <Col xs={10} md={10} lg={2}>
                         <a href={props.url}>
-                        <img
-                            src={props.img}
-                            alt="placeholder"
-                            className="img-fluid"
-                        />
+                            <img
+                                src={props.img}
+                                alt="placeholder"
+                                className="img-fluid"
+                            />
                         </a>
                     </Col>
-
                 </Row>
             </Card.Body>
         </Card>
