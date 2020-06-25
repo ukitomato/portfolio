@@ -21,6 +21,8 @@ This is my portfolio developed by React. I'm testing various tools and services.
     -   [TypeScript](https://www.typescriptlang.org)
 -   Hosting:
 
+    -   [AWS Amplify](https://aws.amazon.com/jp/amplify):
+        https://amp.ukitomato.codes/portfolio
     -   [Github Pages](https://pages.github.com):
         https://gh.ukitomato.codes/portfolio
     -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
@@ -35,6 +37,8 @@ This is my portfolio developed by React. I'm testing various tools and services.
         (Deploying) → Firebase Hosting
     -   [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
         → My Home Server
+    -   [AWS Amplify](https://aws.amazon.com/jp/amplify) → (Deploying) → AWS
+        Amplify
 
 ## Tools
 
