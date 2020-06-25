@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import gatech from '../imgs/GAtechnologies.gif';
 import gluegent from '../imgs/Gluegent.gif';
 import yahoo from '../imgs/YahooJAPAN.gif';
+import starprince from '../imgs/StarPrince.png';
 import ColoredLine from './ColoredLine';
 import Internship from './career/Internship';
 
@@ -33,7 +34,30 @@ function Career(): ReactElement {
                 term={'July 2017 - Present'}
                 topic={'Java NodeJS React GCP Azure AWS Git'}
             />
-
+            <Internship
+                name={'Star Prince, LLC.'}
+                img={starprince}
+                description={
+                    'Developed chat applications on Android/iOS using Java/Objective-C.\n' +
+                    'Experienced both of frontend(mobile) and backend(flask) development in a middle-size team.'
+                }
+                position={'engineer'}
+                type={'Long-term internship'}
+                term={'April 2020 - Present'}
+                topic={'Java ObjectiveC Python Android iOS Flask AWS Git'}
+            />
+            <Internship
+                name={'Yahoo Japan Corporation'}
+                img={yahoo}
+                description={
+                    'Collaborated with senior engineers on the project of a chat-bot management tool with React and offered insight.\n' +
+                    'Experienced LeanXP development methodologies on the project to shorten development times and make better designs.'
+                }
+                position={'engineer'}
+                type={'Short-term internship'}
+                term={'2 weeks, September 2019'}
+                topic={'Machine Learning Python Kaggle GCP'}
+            />
             <Internship
                 name={'GA technologies'}
                 img={gatech}
@@ -45,18 +69,7 @@ function Career(): ReactElement {
                 term={'3 days, August 2019'}
                 topic={'React NodeJS Git LeanXP Agile'}
             />
-            <Internship
-                name={'Yahoo! JAPAN'}
-                img={yahoo}
-                description={
-                    'Collaborated with senior engineers on the project of a chat-bot management tool with React and offered insight.\n' +
-                    'Experienced LeanXP development methodologies on the project to shorten development times and make better designs.'
-                }
-                position={'engineer'}
-                type={'Short-term internship'}
-                term={'2 weeks, September 2019'}
-                topic={'Machine Learning Python Kaggle GCP'}
-            />
+
         </Container>
     );
 }
