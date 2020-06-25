@@ -97,7 +97,6 @@ function Skill(): ReactElement {
                             </Card.Body>
                         </Accordion.Collapse>
 
-
                         <Accordion.Toggle as={Card.Header} eventKey="4">
                             <Row>
                                 <h5>Android</h5>
@@ -129,7 +128,8 @@ function Skill(): ReactElement {
                         <Accordion.Collapse eventKey="5">
                             <Card.Body>
                                 1 years <br />
-                                Startup, Research | Chat Application, Eye-Tracking
+                                Startup, Research | Chat Application,
+                                Eye-Tracking
                             </Card.Body>
                         </Accordion.Collapse>
                         <Accordion.Toggle as={Card.Header} eventKey="6">
@@ -162,7 +162,8 @@ function Skill(): ReactElement {
                         <Accordion.Collapse eventKey="7">
                             <Card.Body>
                                 1 years <br />
-                                Individual | Chat Application (Advanced Rails Tutorial)
+                                Individual | Chat Application (Advanced Rails
+                                Tutorial)
                             </Card.Body>
                         </Accordion.Collapse>
 
@@ -179,7 +180,8 @@ function Skill(): ReactElement {
                         <Accordion.Collapse eventKey="8">
                             <Card.Body>
                                 0.5 years <br />
-                                Startup | Dart, Firebase, Cross Platform Development, PWA
+                                Startup | Dart, Firebase, Cross Platform
+                                Development, PWA
                             </Card.Body>
                         </Accordion.Collapse>
                         <Accordion.Toggle as={Card.Header} eventKey="9">

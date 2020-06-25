@@ -69,7 +69,6 @@ function Career(): ReactElement {
                 term={'3 days, August 2019'}
                 topic={'React NodeJS Git LeanXP Agile'}
             />
-
         </Container>
     );
 }
