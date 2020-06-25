@@ -22,7 +22,7 @@ This is my portfolio developed by React. I'm testing various tools and services.
 -   Hosting:
 
     -   [AWS Amplify](https://aws.amazon.com/jp/amplify):
-        https://amp.ukitomato.codes/portfolio
+        https://amp.ukitomato.codes
     -   [Github Pages](https://pages.github.com):
         https://gh.ukitomato.codes/portfolio
     -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
