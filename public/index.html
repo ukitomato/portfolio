@@ -30,6 +30,29 @@
     <title>UKITOMATO</title>
 
   </head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDeprzde1vwq3OPLuMJM0QoN1J81bzRPUQ",
+      authDomain: "portfolio-ukitomato.firebaseapp.com",
+      databaseURL: "https://portfolio-ukitomato.firebaseio.com",
+      projectId: "portfolio-ukitomato",
+      storageBucket: "portfolio-ukitomato.appspot.com",
+      messagingSenderId: "769817514019",
+      appId: "1:769817514019:web:177d6ac1b9eb0c6e20e196",
+      measurementId: "G-C18VCP2K5T"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
