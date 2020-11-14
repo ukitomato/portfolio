@@ -5,6 +5,9 @@ import gatech from '../imgs/GAtechnologies.gif';
 import gluegent from '../imgs/Gluegent.gif';
 import yahoo from '../imgs/YahooJAPAN.gif';
 import starprince from '../imgs/StarPrince.png';
+import dmm from '../imgs/dmm.jpg';
+import recruit from '../imgs/recruit.png';
+import accenture from '../imgs/accenture.png';
 import ColoredLine from './ColoredLine';
 import Internship from './career/Internship';
 
@@ -23,7 +26,7 @@ function Career(): ReactElement {
                 </Col>
             </Row>
             <Internship
-                name={'Gluegent, inc.'}
+                name={'SIOS Technology, Inc (Gluegent, inc.)'}
                 img={gluegent}
                 description={
                     'Developed and tested prototypes with cloud services such as GCP, AWS, and Azure.\n' +
@@ -31,7 +34,7 @@ function Career(): ReactElement {
                 }
                 position={'engineer'}
                 type={'Long-term internship'}
-                term={'July 2017 - Present'}
+                term={'July 2017 - Current'}
                 topic={'Java NodeJS React GCP Azure AWS Git'}
             />
             <Internship
@@ -43,8 +46,19 @@ function Career(): ReactElement {
                 }
                 position={'engineer'}
                 type={'Long-term internship'}
-                term={'April 2020 - Present'}
+                term={'April 2020 - Current'}
                 topic={'Java ObjectiveC Python Android iOS Flask AWS Git'}
+            />
+            <Internship
+                name={'GA technologies'}
+                img={gatech}
+                description={
+                    'Designed, implemented and evaluated new models and python scripts to estimate the sales price for each house in machine learning and systems engineering.'
+                }
+                position={'engineer'}
+                type={'Hackathon'}
+                term={'3 days, August 2019'}
+                topic={'React NodeJS Git LeanXP Agile'}
             />
             <Internship
                 name={'Yahoo Japan Corporation'}
@@ -59,15 +73,41 @@ function Career(): ReactElement {
                 topic={'Machine Learning Python Kaggle GCP'}
             />
             <Internship
-                name={'GA technologies'}
-                img={gatech}
+                name={'DMM.com LCC'}
+                img={dmm}
                 description={
-                    'Designed, implemented and evaluated new models and python scripts to estimate the sales price for each house in machine learning and systems engineering.'
+                    '\tExperienced developments in many areas such as mobile, business improvement tools, CI, etc.'
                 }
                 position={'engineer'}
-                type={'Hackathon'}
-                term={'3 days, August 2019'}
-                topic={'React NodeJS Git LeanXP Agile'}
+                type={'Short-term internship'}
+                term={'2 weeks, September 2020'}
+                topic={
+                    'Nodejs, Go, AWS, SlackAPI, Shell Script, Kotlin, CircleCI'
+                }
+            />
+            <Internship
+                name={'Recruit Holdings Co., Ltd.'}
+                img={recruit}
+                description={
+                    "Experienced the flow from issue creation to release through Zexy's iOS app development."
+                }
+                position={'engineer'}
+                type={'Short-term internship'}
+                term={'1,5 months, October - November 2020'}
+                topic={'iOS Swift ObjectiveC Scrum Adobe-SiteCatalyst'}
+            />
+            <Internship
+                name={'Accenture Japan Ltd.'}
+                img={accenture}
+                description={
+                    'Experienced a series of engineer work from analysis to requirement definition and construction through application development as a team.'
+                }
+                position={'engineer'}
+                type={'Short-term internship'}
+                term={'4 days, November 2020'}
+                topic={
+                    'Data-Analysis Team-Development Group-Work JavaScript Python'
+                }
             />
         </Container>
     );
