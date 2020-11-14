@@ -11,14 +11,15 @@ import {
 import ColoredLine from './ColoredLine';
 
 const java = 85;
-const android = 70;
+const android = 60;
 const python = 65;
 const nodejs = 70;
-const ios = 60;
+const ios = 70;
 const react = 70;
 const git = 80;
 const rails = 50;
 const flutter = 70;
+const go = 40;
 
 function Skill(): ReactElement {
     return (
@@ -199,6 +200,22 @@ function Skill(): ReactElement {
                                 5 years <br />
                                 Internship, Research, Individual | Github
                                 Enterprise Management, Github Actions
+                            </Card.Body>
+                        </Accordion.Collapse>
+                        <Accordion.Toggle as={Card.Header} eventKey="10">
+                            <Row>
+                                <h5> Go</h5>
+                                <ProgressBar
+                                    bsPrefix={'skill-progress-bar progress'}
+                                    now={go}
+                                    label={`${go}%`}
+                                />
+                            </Row>
+                        </Accordion.Toggle>
+                        <Accordion.Collapse eventKey="10">
+                            <Card.Body>
+                                1 years <br />
+                                Internship
                             </Card.Body>
                         </Accordion.Collapse>
                     </Col>
