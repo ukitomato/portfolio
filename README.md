@@ -22,14 +22,14 @@ This is my portfolio developed by React. I'm testing various tools and services.
     -   [TypeScript](https://www.typescriptlang.org)
 -   Hosting:
     -   [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
-        at My Home Server: https://ukitomato.codes
-    -   [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps): https://www.ukitomato.codes
+        at My Home Server: https://ukitomato.studio
+    -   [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps): https://www.ukitomato.studio
     -   [AWS Amplify](https://aws.amazon.com/jp/amplify):
-        https://amp.ukitomato.codes
+        https://amp.ukitomato.studio
     -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
-        https://fb.ukitomato.codes
+        https://fb.ukitomato.studio
     -   [Github Pages](https://pages.github.com):
-        https://gh.ukitomato.codes/portfolio
+        https://gh.ukitomato.studio/portfolio
 
 -   CI/CD:
     -   [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
