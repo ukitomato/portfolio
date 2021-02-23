@@ -36,6 +36,7 @@ jobs:
     - name: install SSH client
       uses: webfactory/ssh-agent@v0.2.0
       with:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
     - name: deploy
