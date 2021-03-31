@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
 const Research = (props: {
@@ -10,7 +10,7 @@ const Research = (props: {
     topic: string;
     publish: string;
     url: string;
-}) => {
+}): ReactElement => {
     return (
         <Card bg={'dark'}>
             <Card.Header as={'h3'}>{props.name}</Card.Header>

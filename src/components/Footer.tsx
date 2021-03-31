@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Container } from 'react-bootstrap';
 
-function Footer() {
+function Footer(): ReactElement {
     return (
         <Container fluid className="text-center footer">
             <small>
