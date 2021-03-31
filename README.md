@@ -21,9 +21,11 @@ This is my portfolio developed by React. I'm testing various tools and services.
     -   [NodeJS](https://nodejs.org): v14.x
     -   [TypeScript](https://www.typescriptlang.org)
 -   Hosting:
+
     -   [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
         at My Home Server: https://ukitomato.studio
-    -   [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps): https://www.ukitomato.studio
+    -   [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps):
+        https://www.ukitomato.studio
     -   [AWS Amplify](https://aws.amazon.com/jp/amplify):
         https://amp.ukitomato.studio
     -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
@@ -34,13 +36,15 @@ This is my portfolio developed by React. I'm testing various tools and services.
 -   CI/CD:
     -   [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
         → My Home Server
-    -   [Github Actions](https://github.co.jp/features/actions) → (Deploying) → Azure Static Web Apps
+    -   [Github Actions](https://github.co.jp/features/actions) → (Deploying) →
+        Azure Static Web Apps
     -   [AWS Amplify](https://aws.amazon.com/jp/amplify) → (Deploying) → AWS
         Amplify
     -   [Travis CI](https://travis-ci.com) → (Testing) → (Building) →
         (Deploying) → Firebase Hosting
     -   [Github Actions](https://github.co.jp/features/actions) → (Testing) →
         (Building) → (Deploying) → Github Pages
+
 ## Tools
 
 -   Editor: WebStorm
