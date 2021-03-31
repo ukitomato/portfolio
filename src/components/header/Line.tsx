@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import ColoredLine from '../ColoredLine';
 
-const Line = (props: { name: string }) => {
+const Line = (props: { name: string }): ReactElement => {
     return (
         <Nav.Item className={'indicator-item'}>
             <Link

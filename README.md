@@ -18,7 +18,7 @@ This is my portfolio developed by React. I'm testing various tools and services.
 
 -   Language:
     -   [React](https://reactjs.org)
-    -   [NodeJS](https://nodejs.org): v12.x
+    -   [NodeJS](https://nodejs.org): v14.x
     -   [TypeScript](https://www.typescriptlang.org)
 -   Hosting:
     -   [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)

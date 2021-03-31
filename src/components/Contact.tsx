@@ -44,7 +44,7 @@ function Contact(): ReactElement {
 
                 <Form.Group controlId="formContent">
                     <Form.Label>Content</Form.Label>
-                    <Form.Control as="textarea" rows="3" name={'freespace'} />
+                    <Form.Control as="textarea" rows={3} name={'freespace'} />
                 </Form.Group>
 
                 <Button

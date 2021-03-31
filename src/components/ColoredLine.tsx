@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const ColoredLine = (props: { color: string; className: string }) => (
+const ColoredLine = (props: {
+    color: string;
+    className: string;
+}): ReactElement => (
     <hr
         className={props.className}
         style={{

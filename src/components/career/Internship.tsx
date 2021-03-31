@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
 const Internship = (props: {
@@ -9,7 +9,7 @@ const Internship = (props: {
     type: string;
     term: string;
     topic: string;
-}) => {
+}): ReactElement => {
     return (
         <Card bg={'dark'}>
             <Card.Header as={'h3'}>{props.name}</Card.Header>
