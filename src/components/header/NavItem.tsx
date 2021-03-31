@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
-const NavItem = (props: { name: string }) => {
+const NavItem = (props: { name: string }): ReactElement => {
     return (
         <Nav.Item className={'navItem'}>
             <Link

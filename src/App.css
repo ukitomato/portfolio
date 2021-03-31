@@ -56,7 +56,7 @@
 .home {
     background-image: url("imgs/person_landscape.gif");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
     position: relative;
     overflow: hidden;
     background-size: cover;
