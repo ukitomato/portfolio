@@ -31,7 +31,7 @@ This is my portfolio developed by React. I'm testing various tools and services.
     -   [Firebase Hosting](https://firebase.google.com/docs/hosting):
         https://fb.ukitomato.studio
     -   [Github Pages](https://pages.github.com):
-        https://gh.ukitomato.studio/portfolio
+        https://gh.ukitomato.studio
 
 -   CI/CD:
     -   [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
