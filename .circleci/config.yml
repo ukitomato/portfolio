@@ -19,7 +19,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "3c:c4:83:d7:4e:19:14:a2:78:4e:61:dc:ed:ad:e3:69"
+            - "c8:33:f9:bb:85:47:cc:8f:77:07:f3:4a:74:34:0f:a9"
       - run: ssh -p 49568 web-admin@ukitomato.studio 'cd /usr/share/nginx/html && git pull && exit'
 
 
