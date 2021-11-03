@@ -1,8 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { useLocation } from "@reach/router"
 
 const GatsbyNavLink = ({ to, children }) => {
-  let currentPath = new URL(window.location.href).pathname
+  const location = useLocation()
+  let currentPath = location.pathname
   if (currentPath.endsWith("/")) {
     currentPath = currentPath.slice(0, -1)
   }
