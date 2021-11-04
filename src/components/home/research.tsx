@@ -1,43 +1,42 @@
 import * as React from "react"
 import { ReactElement } from "react"
-import { Accordion, Col, Container, ProgressBar, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import ColoredLine from "./colored-line"
 import "./skill.css"
-import Internship from "./internship"
-import { getImage } from "gatsby-plugin-image"
 import Paper from "./paper"
 
 function Research(): ReactElement {
   const data = useStaticQuery(graphql`
-    query {
-      allMdx {
-        nodes {
-          fields {
-            source
-          }
-          frontmatter {
-            name
-            description
-            publish
-            type
-            term
-            topic
-            img {
-              childImageSharp {
-                gatsbyImageData(
-                  blurredOptions: { width: 100 }
-                  placeholder: BLURRED
-                )
+      query {
+          allMdx {
+              nodes {
+                  fields {
+                      source
+                  }
+                  frontmatter {
+                      name
+                      description
+                      publish
+                      type
+                      term
+                      topic
+                      url
+                      img {
+                          childImageSharp {
+                              gatsbyImageData(
+                                  blurredOptions: { width: 100 }
+                                  placeholder: BLURRED
+                              )
+                          }
+                      }
+                  }
               }
-            }
           }
-        }
       }
-    }
   `)
   return (
     <Container
@@ -47,7 +46,7 @@ function Research(): ReactElement {
       style={{
         minHeight: "50vh",
         backgroundColor: "#212529FF",
-        color: "whitesmoke",
+        color: "whitesmoke"
       }}
     >
       <Row className="justify-content-center p-4">
@@ -60,7 +59,7 @@ function Research(): ReactElement {
         <Col xs={10}>
           {data.allMdx.nodes
             .filter(node => node.fields.source === "research")
-            .map((paper, i) => {
+            .map((paper) => {
               return (
                 <div className="p-4">
                   <Paper data={paper.frontmatter} />

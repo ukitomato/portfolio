@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ReactElement } from "react"
-import { Accordion, Col, Container, ProgressBar, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
@@ -8,7 +8,6 @@ import styled from "styled-components"
 import ColoredLine from "./colored-line"
 import "./skill.css"
 import Internship from "./internship"
-import { getImage } from "gatsby-plugin-image"
 
 function Career(): ReactElement {
   const data = useStaticQuery(graphql`
@@ -61,7 +60,7 @@ function Career(): ReactElement {
         <Col xs={10}>
           {data.allMdx.nodes
             .filter(node => node.fields.source === "career")
-            .map((career, i) => {
+            .map((career) => {
               return (
                 <div className="p-4">
                   <Internship data={career.frontmatter} />

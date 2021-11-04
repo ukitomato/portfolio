@@ -1,6 +1,6 @@
 import * as React from "react"
 import { ReactElement } from "react"
-import { Card, Col, Row } from "react-bootstrap"
+import { Card, Col, Container, Row } from "react-bootstrap"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Internship = (props: { data }): ReactElement => {
@@ -12,31 +12,33 @@ const Internship = (props: { data }): ReactElement => {
         {props.data.name}
       </Card.Header>
       <Card.Body>
-        <Row className="justify-content-center align-items-center">
-          <Col xs={10} md={10} lg={4} className="p-4">
-            <GatsbyImage image={image} alt="company image" />
-          </Col>
-          <Col xs={10} md={10} lg={8}>
-            <Col className="justify-content-start">
-              <p className="i-description text-left">
-                {props.data.description}
-              </p>
+        <Container>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col xs={10} md={10} lg={4} className="p-4">
+              <GatsbyImage image={image} alt="company image" />
             </Col>
-            <Col>
-              <ul className="site-list">
-                <li className="site-check">Type: {props.data.type}</li>
-                <li className="site-check">Position: {props.data.position}</li>
-                <li className="site-check">
-                  Term:{" "}
-                  <span className="date">
+            <Col xs={10} md={10} lg={8}>
+              <Col className="justify-content-start">
+                <p className="i-description text-left">
+                  {props.data.description}
+                </p>
+              </Col>
+              <Col>
+                <ul className="site-list">
+                  <li className="site-check">Type: {props.data.type}</li>
+                  <li className="site-check">Position: {props.data.position}</li>
+                  <li className="site-check">
+                    Term:{" "}
+                    <span className="date">
                     <span className="icon-calendar" /> {props.data.term}
                   </span>
-                </li>
-                <li className="site-check">Topic: {props.data.topic}</li>
-              </ul>
+                  </li>
+                  <li className="site-check">Topic: {props.data.topic}</li>
+                </ul>
+              </Col>
             </Col>
-          </Col>
-        </Row>
+          </Row>
+        </Container>
       </Card.Body>
     </Card>
   )

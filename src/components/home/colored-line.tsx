@@ -8,8 +8,11 @@ const ColoredLine = (props: {
   <hr
     className={props.className}
     style={{
+      borderRadius: "2.5px",
+      height: "5px",
+      width: "100%",
       color: props.color,
-      backgroundColor: props.color,
+      backgroundColor: props.color
     }}
   />
 )

@@ -2,6 +2,7 @@ import * as React from "react"
 import { ReactElement } from "react"
 import { Card, Col, Container, Row } from "react-bootstrap"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const Paper = (props: { data }): ReactElement => {
   const image = getImage(props.data.img)
@@ -34,7 +35,9 @@ const Paper = (props: { data }): ReactElement => {
               </Col>
             </Col>
             <Col xs={10} md={10} lg={4} className="p-4">
-              <GatsbyImage image={image} alt="company image" />
+              <Link to={props.data.url}>
+                <GatsbyImage image={image} alt="publisher image" />
+              </Link>
             </Col>
           </Row>
           <Row>
