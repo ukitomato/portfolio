@@ -9,22 +9,20 @@ import ColoredLine from "./colored-line"
 import "./skill.css"
 
 function Skill(): ReactElement {
-  const data = useStaticQuery(graphql`
-    query {
-      allSkillsJson {
-        edges {
-          node {
-            language
-            level
-            duration
-            experience_at
-            topic
+  const data = useStaticQuery<GatsbyTypes.getSkillsQuery>(graphql`
+      query getSkills {
+          allContentfulSkill(sort: { fields: level, order: DESC }) {
+              nodes {
+                  experienceAt
+                  duration
+                  id
+                  language
+                  topic
+                  level
+              }
           }
-        }
       }
-    }
   `)
-  console.log(data.allSkillsJson)
   return (
     <Container
       fluid
@@ -54,26 +52,28 @@ function Skill(): ReactElement {
         </Col>
         <Col xs={10} md={10} lg={7}>
           <Accordion>
-            {data.allSkillsJson.edges.map((skill, i) => {
+            {data.allContentfulSkill.nodes.map((skill, i) => {
               return (
-                <Accordion.Item eventKey={i.toString()}>
-                  <Accordion.Header>
-                    <Container fluid>
-                      <h5>{skill.node.language}</h5>
-                      <ProgressBar
-                        now={skill.node.level}
-                        label={`${skill.node.level}%`}
-                        style={{ color: "#52cef6" }}
-                      />
-                    </Container>
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    <Container fluid className="text-center">
-                      {skill.node.duration} <br />
-                      {skill.node.experience_at} | {skill.node.topic}
-                    </Container>
-                  </Accordion.Body>
-                </Accordion.Item>
+                <div key={skill.id}>
+                  <Accordion.Item eventKey={i.toString()}>
+                    <Accordion.Header>
+                      <Container fluid>
+                        <h5>{skill.language}</h5>
+                        <ProgressBar
+                          now={skill.level}
+                          label={`${skill.level}%`}
+                          style={{ color: "#52cef6" }}
+                        />
+                      </Container>
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      <Container fluid className="text-center">
+                        {skill.duration} <br />
+                        {skill.experienceAt} | {skill.topic}
+                      </Container>
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </div>
               )
             })}
           </Accordion>

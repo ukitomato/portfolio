@@ -31,7 +31,12 @@ function About(): ReactElement {
             style={{ maxHeight: "70vh" }}
           />
         </Col>
-        <Col xs={10} md={10} lg={5} className="p-4 justify-content-center align-items-center d-flex flex-column">
+        <Col
+          xs={10}
+          md={10}
+          lg={5}
+          className="p-4 justify-content-center align-items-center d-flex flex-column"
+        >
           <Row>
             <Col xs={12} className="section-heading justify-content-start">
               <h2 className={"text-left"}>
@@ -41,7 +46,8 @@ function About(): ReactElement {
             </Col>
             <Col xs={12} className="justify-content-start">
               <p className="description text-left">
-                I&apos;m a Master&apos;s student at University of Tsukuba and an engineer.
+                I&apos;m a Master&apos;s student at University of Tsukuba and an
+                engineer.
               </p>
               <p className="about-page text-left">
                 I&apos;m majoring in User Interface, Human-Computer Interaction,

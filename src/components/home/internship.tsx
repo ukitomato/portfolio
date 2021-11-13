@@ -1,10 +1,20 @@
 import * as React from "react"
 import { ReactElement } from "react"
 import { Card, Col, Container, Row } from "react-bootstrap"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, IGatsbyImageData, ImageDataLike } from "gatsby-plugin-image"
 
-const Internship = (props: { data }): ReactElement => {
-  const image = getImage(props.data.img)
+type InternshipProps = {
+  name: string
+  description: { description: string }
+  img: ImageDataLike
+  type: string
+  position: string
+  term: string
+  topic: string
+}
+
+const Internship = (props: { data: InternshipProps }): ReactElement => {
+  const image: IGatsbyImageData = getImage(props.data.img)!
 
   return (
     <Card style={{ backgroundColor: "#292f33" }}>
@@ -20,18 +30,20 @@ const Internship = (props: { data }): ReactElement => {
             <Col xs={10} md={10} lg={8}>
               <Col className="justify-content-start">
                 <p className="i-description text-left">
-                  {props.data.description}
+                  {props.data.description.description}
                 </p>
               </Col>
               <Col>
                 <ul className="site-list">
                   <li className="site-check">Type: {props.data.type}</li>
-                  <li className="site-check">Position: {props.data.position}</li>
+                  <li className="site-check">
+                    Position: {props.data.position}
+                  </li>
                   <li className="site-check">
                     Term:{" "}
                     <span className="date">
-                    <span className="icon-calendar" /> {props.data.term}
-                  </span>
+                      <span className="icon-calendar" /> {props.data.term}
+                    </span>
                   </li>
                   <li className="site-check">Topic: {props.data.topic}</li>
                 </ul>

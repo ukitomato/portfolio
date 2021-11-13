@@ -10,12 +10,15 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-mdx-source-name",
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-smoothscroll`,
-
+    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-typegen`,
+      options: {
+        outputPath: `src-gen/gatsby-types.d.ts`
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,13 +30,20 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#339199`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ue6ri98smlot`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -43,7 +53,7 @@ module.exports = {
           "@layouts": "src/layouts",
           "@pages": "src/pages",
           "@sass": "src/sass",
-          "@templates": "src/templates",
+          "@templates": "src/templates"
         },
         extensions: ["js", "jsx", "ts", "tsx"],
       },
@@ -53,27 +63,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `skills`,
-        path: `${__dirname}/src/data/skills`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `career`,
-        path: `${__dirname}/src/data/career`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `research`,
-        path: `${__dirname}/src/data/research`,
       },
     },
   ],

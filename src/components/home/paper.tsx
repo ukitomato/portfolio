@@ -1,11 +1,21 @@
 import * as React from "react"
 import { ReactElement } from "react"
 import { Card, Col, Container, Row } from "react-bootstrap"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import { GatsbyImage, getImage, IGatsbyImageData, ImageDataLike } from "gatsby-plugin-image"
 
-const Paper = (props: { data }): ReactElement => {
-  const image = getImage(props.data.img)
+type PaperProps = {
+  name: string
+  description: { description: string }
+  publish: { publish: string }
+  type: string
+  term: string
+  topic: string
+  url: string
+  img: ImageDataLike
+}
+
+const Paper = (props: { data: PaperProps }): ReactElement => {
+  const image: IGatsbyImageData = getImage(props.data.img)!
 
   return (
     <Card style={{ backgroundColor: "#292f33" }}>
@@ -18,7 +28,7 @@ const Paper = (props: { data }): ReactElement => {
             <Col xs={10} md={10} lg={8}>
               <Col className="justify-content-start">
                 <p className="i-description text-left">
-                  {props.data.description}
+                  {props.data.description.description}
                 </p>
               </Col>
               <Col>
@@ -35,14 +45,16 @@ const Paper = (props: { data }): ReactElement => {
               </Col>
             </Col>
             <Col xs={10} md={10} lg={4} className="p-4">
-              <Link to={props.data.url}>
+              <a href={props.data.url}>
                 <GatsbyImage image={image} alt="publisher image" />
-              </Link>
+              </a>
             </Col>
           </Row>
           <Row>
             <Col>
-              <small style={{ color: "darkgray" }}>{props.data.publish}</small>
+              <small style={{ color: "darkgray" }}>
+                {props.data.publish.publish}
+              </small>
             </Col>
           </Row>
         </Container>

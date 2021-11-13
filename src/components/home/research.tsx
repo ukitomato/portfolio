@@ -10,29 +10,24 @@ import "./skill.css"
 import Paper from "./paper"
 
 function Research(): ReactElement {
-  const data = useStaticQuery(graphql`
-      query {
-          allMdx {
+  const data = useStaticQuery<GatsbyTypes.getPapersQuery>(graphql`
+      query getPapers {
+          allContentfulPaper {
               nodes {
-                  fields {
-                      source
-                  }
-                  frontmatter {
-                      name
+                  id
+                  name
+                  description {
                       description
+                  }
+                  publish {
                       publish
-                      type
-                      term
-                      topic
-                      url
-                      img {
-                          childImageSharp {
-                              gatsbyImageData(
-                                  blurredOptions: { width: 100 }
-                                  placeholder: BLURRED
-                              )
-                          }
-                      }
+                  }
+                  type
+                  term
+                  topic
+                  url
+                  img {
+                      gatsbyImageData(placeholder: BLURRED)
                   }
               }
           }
@@ -57,15 +52,13 @@ function Research(): ReactElement {
           <ColoredLine color={"#52cef6"} className={"career-section-line"} />
         </Col>
         <Col xs={10}>
-          {data.allMdx.nodes
-            .filter(node => node.fields.source === "research")
-            .map((paper) => {
-              return (
-                <div className="p-4">
-                  <Paper data={paper.frontmatter} />
-                </div>
-              )
-            })}
+          {data.allContentfulPaper.nodes.map((paper: any) => {
+            return (
+              <div key={paper.id} className="p-4">
+                <Paper data={paper} />
+              </div>
+            )
+          })}
         </Col>
       </Row>
     </Container>
