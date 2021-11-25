@@ -1,0 +1,38 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.2.1
+jobs:
+  build-and-test:
+    executor:
+      name: node/default
+      tag: '14'
+    steps:
+      - checkout
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm ci
+      - run: npm run build
+  deploy:
+    machine:
+      image: circleci/classic:edge
+    steps:
+      - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "c8:33:f9:bb:85:47:cc:8f:77:07:f3:4a:74:34:0f:a9"
+      - run: ssh -p 49568 web-admin@xg41.ukitomato.dev 'cd /usr/share/nginx/html && git pull && exit'
+
+
+workflows:
+  build-and-test-and-deploy:
+    jobs:
+      - build-and-test:
+          filters:
+            branches:
+              only: master
+#      - deploy:
+#          requires:
+#            - build-and-test
+#          filters:
+#            branches:
+#              only: master

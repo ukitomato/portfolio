@@ -42,6 +42,7 @@
     "@graphql-codegen/typescript": "2.3.1",
     "@graphql-codegen/typescript-operations": "2.2.0",
     "@types/styled-components": "^5.1.15",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1"
   },
   "keywords": [
@@ -51,11 +52,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "predeploy": "gatsby build",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "repository": {
     "type": "git",
