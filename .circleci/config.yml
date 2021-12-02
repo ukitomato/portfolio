@@ -17,6 +17,7 @@ workflows:
   build-and-deploy:
     jobs:
        - node/run:
+          version: 14.18.2
           npm-run: build
           filters:
             branches:
