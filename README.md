@@ -20,10 +20,10 @@ This is my portfolio developed by React. I'm testing various tools and services.
     - [React](https://reactjs.org)
     - [NodeJS](https://nodejs.org): v14.x
     - [TypeScript](https://www.typescriptlang.org)
-    - Gatsby
-    - Contentful
+- Tools:
+    - [Gatsby](https://www.gatsbyjs.org)
+    - [Contentful](https://www.contentful.com)
 - Hosting:
-
     - [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
       at My Home Server: https://ukitomato.dev
     - [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps):
