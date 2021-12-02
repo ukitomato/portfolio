@@ -20,21 +20,23 @@ This is my portfolio developed by React. I'm testing various tools and services.
     - [React](https://reactjs.org)
     - [NodeJS](https://nodejs.org): v14.x
     - [TypeScript](https://www.typescriptlang.org)
+    - Gatsby
+    - Contentful
 - Hosting:
 
     - [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
-      at My Home Server: https://ukitomato.studio
+      at My Home Server: https://ukitomato.dev
     - [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps):
-      https://www.ukitomato.studio
+      https://azure.ukitomato.dev
     - [AWS Amplify](https://aws.amazon.com/jp/amplify):
-      https://amp.ukitomato.studio
+      https://amp.ukitomato.dev
     - [Firebase Hosting](https://firebase.google.com/docs/hosting):
-      https://fb.ukitomato.studio
+      https://fb.ukitomato.dev
     - [Github Pages](https://pages.github.com):
-      https://gh.ukitomato.studio
+      https://gh.ukitomato.dev
 
 - CI/CD:
-    - [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
+    - disabled [Circle CI](https://circleci.com) → (Testing) → (Building) → (Deploying)
       → My Home Server
     - [Github Actions](https://github.co.jp/features/actions) → (Deploying) → Azure Static Web Apps
     - [AWS Amplify](https://aws.amazon.com/jp/amplify) → (Deploying) → AWS Amplify
