@@ -9,7 +9,6 @@ jobs:
     steps:
       - node/install:
           node-version: '14' 
-      - node/install-packages
   deploy:
     machine:
       image: circleci/classic:edge
