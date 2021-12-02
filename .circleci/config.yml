@@ -2,6 +2,14 @@ version: 2.1
 orbs:
   node: circleci/node@4.7.0
 jobs:
+  build:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - node/install:
+          node-version: '14.18.2' 
+      - node/install-packages
   deploy:
     machine:
       image: circleci/classic:edge
@@ -16,9 +24,7 @@ jobs:
 workflows:
   build-and-deploy:
     jobs:
-       - node/run:
-          version: 14.18.2
-          npm-run: build
+       - build:
           filters:
             branches:
               only: master
