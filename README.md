@@ -26,13 +26,13 @@ This is my portfolio developed by React. I'm testing various tools and services.
 - Hosting:
     - [Nginx](https://nginx.org) on [CentOS 8 Stream](https://www.centos.org)
       at My Home Server: https://ukitomato.dev
-    - [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps):
+    - (移行中) [Azure Static Web Apps](https://docs.microsoft.com/ja-jp/azure/static-web-apps):
       https://azure.ukitomato.dev
-    - [AWS Amplify](https://aws.amazon.com/jp/amplify):
+    - (移行中) [AWS Amplify](https://aws.amazon.com/jp/amplify):
       https://amp.ukitomato.dev
-    - [Firebase Hosting](https://firebase.google.com/docs/hosting):
+    - (移行中) [Firebase Hosting](https://firebase.google.com/docs/hosting):
       https://fb.ukitomato.dev
-    - [Github Pages](https://pages.github.com):
+    - (移行中) [Github Pages](https://pages.github.com):
       https://gh.ukitomato.dev
 
 - CI/CD:
