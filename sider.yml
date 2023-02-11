@@ -1,5 +1,0 @@
-linter:
-  eslint:
-    config: .eslintrc.json
-    dir: "src/"
-    ext: ".js,.jsx,.ts,.tsx"
